@@ -4,7 +4,7 @@ SDDの要件・設計・実装でAIが下した判断のうち、人間に確認
 
 The same `SKILL.md` works in Cursor and Claude Code. It extracts decisions that need human review from requirements, design, and implementation changes.
 
-## かんたんインストール
+## インストール
 
 [Node.js](https://nodejs.org/) が入っていれば、ターミナルで次の1行を実行できます。CursorとClaude Codeの両方へ、全プロジェクトで使えるようにインストールします。
 
@@ -22,16 +22,6 @@ npx skills add usuiatsushi/decision-review -a cursor -a claude-code -g --copy -y
 - 人間の修正をAIが再レビューし、確定した判断を成果物に対応づける
 
 初期版は小さな開発タスクで判定基準の見落としを検証するためのものです。成果物の差分確認、テスト、最終Acceptanceを省略しないでください。
-
-## 手動インストール
-
-このリポジトリ内の `decision-review` フォルダをコピーします。1つのプロジェクトで両方使うなら次の配置で共有できます。
-
-```text
-プロジェクト/.claude/skills/decision-review/SKILL.md
-```
-
-Cursor専用のプロジェクト配置は `.cursor/skills/decision-review/SKILL.md`、個人用はCursorが `~/.cursor/skills/decision-review/SKILL.md`、Claude Codeが `~/.claude/skills/decision-review/SKILL.md` です。
 
 ## 使い方
 
